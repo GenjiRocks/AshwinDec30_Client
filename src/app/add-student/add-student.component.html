@@ -1,0 +1,83 @@
+<div class="row mt-5">
+    <div class="col-md-2"></div>
+    <div class="col-md-3">
+        <div class="card" style="width: 100%;" >
+            <img src="https://media.istockphoto.com/id/1495088043/vector/user-profile-icon-avatar-or-person-icon-profile-picture-portrait-symbol-default-portrait.jpg?s=612x612&w=0&k=20&c=dhV2p1JwmloBTOaGAtaA3AW1KSnjsdMt7-U_3EZElZ0=" class="card-img-top" style="width:100%;" alt="...">
+            <div class="card-body">
+              <p class="">Change Student Image</p>
+              <input type="file" id="file" name="file" accept="image/*" (change)="OnImageSelect($event)">
+              
+
+            </div>
+          </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card" >
+            
+            <div class="card-body">
+                <div class="shadow-none p-3 bg-body-tertiary rounded">
+                    <h5 class="card-title" >Student Data</h5>
+                </div>
+                <div class="px-3 mt-3">
+                    <h5>Add Student</h5>
+                    <p class="mb-4">Form to edit Student in the System</p>
+                    <div class="row mb-2">
+                        <!-- <div class="col-sm-4">Student ID</div> -->
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-4">
+                            <!-- <input type="text" class="form-control" id="studentId" placeholder="Student ID"> -->
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-4">Student First Name</div>
+                        <div class="col-sm-8">Student Last Name</div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-4">
+                            <input type="text" [(ngModel)]="student.firstName" class="form-control" id="studentId" placeholder="First Name">
+                        </div>
+                        <div class="col-sm-8"><input  [(ngModel)]="student.lastName"  type="text" class="form-control" id="studentId" placeholder="Last Name"></div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-sm-4">Student Email</div>
+                        <div class="col-sm-8">Course</div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-4">
+                            <input type="email" [(ngModel)]="student.email"  class="form-control" id="studentId" placeholder="student@gmail.com">
+                        </div>
+                        <div class="col-sm-8">
+                            <input type="text" [(ngModel)]="student.course"  class="form-control" id="studentId" placeholder="Course Name">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-4">Student Date of Birth</div>
+                        <div class="col-sm-8"></div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-sm-4">
+                            <input type="date" [(ngModel)]="student.dob"  class="form-control" id="studentId" placeholder="yyyy-mm-dd">
+                        </div>
+                        <div class="col-sm-8">
+                            
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-sm-9"></div>
+                        <div class="col-sm-3"><button  (click)="addStudent()" type="button" class="btn btn-primary">Add Student</button></div>
+                    </div>
+                </div>
+                
+              
+              
+             
+            </div>
+          </div>
+    </div>
+    <div class="col-md-2"></div>
+</div>
